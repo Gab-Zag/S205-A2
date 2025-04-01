@@ -1,0 +1,323 @@
+:root {
+  --cor-click: #126ae2; /* Click */
+  --cor-sombra: #0a599b; /* Azul Escuro */
+  --cor-text: black; /* Preto */
+  --cor-back1: #edf2f4; /* Azul claro */
+  --cor-back2: #6a937a; /* Verde Escuro */
+  
+  --md-sys-color-primary: #126ae2;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #edf2f4;
+  --md-sys-color-on-primary-container: #002020;
+  
+  --frequencia: #126ae2;
+  --nota: #126ae2;
+  --prova: #126ae2;
+  
+  
+}
+
+body {
+  margin: 0px;
+  background-color: var(--cor-back1);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+
+header {
+  position: relative;
+  height: 35px;
+  top: 0px;
+  left: 0px;
+  rigth: 0px;
+}
+
+#menu {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+#logo {
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.svg_logo{
+  width: 80px;
+}
+
+.path_logo{
+  fill: var(--cor-click);
+}
+
+#perfil {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  margin-right: 15px;
+}
+
+#mensagens {
+  position: relative;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  rigth: 0px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user_name {
+  display: block;
+  font-size: 17pt;
+}
+
+#mns_box {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  rigth: 0px;
+  margin-top:5px;
+}
+
+#icon {
+  width: 18px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+#mns {
+  padding: 5px;
+  width: 80%;
+  display: inline-block;
+}
+
+.material-symbols-outlined {
+  color: var(--cor-click);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icoG {
+  font-size: 30px;
+}
+
+.icoP {
+  font-size: 18px;
+  /* vertical-align: middle; */ /* propriedade para deixar o icone centralizado na linha */
+}
+
+.font {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 11px;
+  color: var(--cor-text)
+}
+
+#menu_aba {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  display: none;
+  border-radius: 10px;
+}
+
+#menu_bot {
+  position: relative;
+  padding: 20px;
+  display: "block";
+  cursor: pointer;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 14pt;
+  color: var(--cor-click)
+  transition: 0.5s;
+}
+
+#componentes {
+  position: relative;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  rigth: 0px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+h3 {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 14px;
+  color: var(--cor-text);
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+p {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 11px;
+  color: var(--cor-text);
+  line-height: 1.5;
+  orphans: 3;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    min-width: 100%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.info {
+    padding: 10px
+}
+
+.icon {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 2px;
+    width: 18px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+button {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
+
+
+.comp-aula {
+  position: relative;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  rigth: 0px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo_aula {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15px;
+  color: var(--cor-text);
+  padding-left: 5px;
+  padding-right: 5px;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lables {
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.lable-prova {
+  background-color: var(--prova);
+  padding: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 500px;
+  text-align: center
+}
+
+.lable-frequencia {
+  background-color: var(--frequencia);
+  padding: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 10px;
+  border-radius: 500px;
+}
+
+.lable-nota {
+  background-color: var(--prova);
+  padding: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 10px;
+  border-radius: 500px;
+}
+
+.p_lable {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 11px;
+  color: white;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
