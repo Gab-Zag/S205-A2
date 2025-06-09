@@ -1,0 +1,45 @@
+<body>
+  <header>
+    <h1>Inatel</h1>
+  </header>
+
+  <div class="main-box">
+    <div id="bannerCarousel" class="banner-carousel"></div>
+
+    <main>
+      <div class="filters">
+        <button onclick="filterAds('Estágio')">Estágios</button>
+        <button onclick="filterAds('Intercâmbio')">Intercâmbio</button>
+        <button onclick="filterAds('Auxílio Estudantil')">Auxílio Estudantil</button>
+        <button onclick="showAllAds()">Mostrar Todos</button>
+      </div>
+
+      <section class="ads-container" id="adsContainer"></section>
+
+      <button class="add-button" onclick="openForm()">+ ADICIONAR ANÚNCIO</button>
+
+      <div class="form-popup" id="formPopup">
+        <form id="adForm">
+          <span class="close" onclick="closeForm()">X</span>
+          <label>Empresa</label>
+          <input type="text" id="empresa" required />
+          <label>Título</label>
+          <input type="text" id="titulo" required />
+          <label>Descrição</label>
+          <input type="text" id="descricao" required />
+          <label>URL da imagem</label>
+          <input type="url" id="imagem" required />
+          <label>Categoria(s)</label>
+          <select id="categoria" multiple required>
+            <option value="Estágio">Estágio</option>
+            <option value="Intercâmbio">Intercâmbio</option>
+            <option value="Auxílio Estudantil">Auxílio Estudantil</option>
+          </select>
+          <button type="submit">Adicionar anúncio</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
